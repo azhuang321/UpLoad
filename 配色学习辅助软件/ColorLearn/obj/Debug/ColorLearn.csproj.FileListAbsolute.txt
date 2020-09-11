@@ -1,0 +1,10 @@
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\bin\Debug\ColorLearn.exe.config
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\bin\Debug\ColorLearn.exe
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\bin\Debug\ColorLearn.pdb
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\obj\Debug\ColorLearn.Properties.Resources.resources
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\obj\Debug\ColorLearn.csproj.GenerateResource.Cache
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\obj\Debug\ColorLearn.exe
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\obj\Debug\ColorLearn.pdb
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\obj\Debug\ColorLearn.ColorSelect.resources
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\obj\Debug\ColorLearn.Form1.resources
+E:\ZJZ\研究源文件\项目工程\Github\配色学习辅助软件\ColorLearn\obj\Debug\ColorLearn.ColorPanel.resources
