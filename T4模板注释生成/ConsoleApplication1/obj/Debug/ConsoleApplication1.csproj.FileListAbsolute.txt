@@ -1,0 +1,2 @@
+c:\users\zjz\documents\visual studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\ZJZ\研究源文件\项目工程\Github\T4模板注释生成\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
