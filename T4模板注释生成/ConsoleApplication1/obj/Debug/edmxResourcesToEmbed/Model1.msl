@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JiaJiangModelStoreContainer" CdmEntityContainer="JiaJiangEntities">
+    <EntitySetMapping Name="FM_Disease">
+      <EntityTypeMapping TypeName="JiaJiangModel.FM_Disease">
+        <MappingFragment StoreEntitySet="FM_Disease">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GP_Name" ColumnName="GP_Name" />
+          <ScalarProperty Name="Disease_Type" ColumnName="Disease_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
