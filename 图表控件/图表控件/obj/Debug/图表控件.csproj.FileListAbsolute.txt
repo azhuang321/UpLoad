@@ -1,0 +1,12 @@
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\bin\Debug\图表控件.exe.config
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\bin\Debug\图表控件.exe
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\bin\Debug\图表控件.pdb
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.csprojResolveAssemblyReference.cache
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.LineChart.resources
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.Properties.Resources.resources
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.csproj.GenerateResource.Cache
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.exe
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.pdb
+c:\users\zjz\documents\visual studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.Form1.resources
+C:\Users\zjz\Documents\Visual Studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.exe.licenses
+C:\Users\zjz\Documents\Visual Studio 2013\Projects\图表控件\图表控件\obj\Debug\图表控件.MainForm.resources

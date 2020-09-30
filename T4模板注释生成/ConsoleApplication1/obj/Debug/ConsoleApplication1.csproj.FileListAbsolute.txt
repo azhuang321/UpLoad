@@ -8,3 +8,5 @@ E:\ZJZ\研究源文件\项目工程\Github\T4模板注释生成\ConsoleApplicati
 E:\ZJZ\研究源文件\项目工程\Github\T4模板注释生成\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 E:\ZJZ\研究源文件\项目工程\Github\T4模板注释生成\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 E:\ZJZ\研究源文件\项目工程\Github\T4模板注释生成\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\ZJZ\研究源文件\项目工程\Github\T4模板注释生成\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+E:\ZJZ\研究源文件\项目工程\Github\T4模板注释生成\ConsoleApplication1\bin\Debug\Newtonsoft.Json.xml
