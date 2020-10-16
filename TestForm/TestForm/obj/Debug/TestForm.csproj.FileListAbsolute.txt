@@ -1,0 +1,24 @@
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\bin\Debug\TestForm.exe.config
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\obj\Debug\TestForm.Form1.resources
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\bin\Debug\TestForm.exe
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\bin\Debug\TestForm.pdb
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\obj\Debug\TestForm.exe
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\obj\Debug\TestForm.pdb
+c:\users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\obj\Debug\TestForm.LoginForm.resources
+C:\Users\zjz\documents\visual studio 2013\Projects\TestForm\TestForm\obj\Debug\TestForm.MyTree.resources
+E:\ZJZ\Github\TestForm\TestForm\bin\Debug\TestForm.exe.config
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.exe
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.pdb
+E:\ZJZ\Github\TestForm\TestForm\bin\Debug\TestForm.exe
+E:\ZJZ\Github\TestForm\TestForm\bin\Debug\TestForm.pdb
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.Form1.resources
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.LoginForm.resources
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.MyTree.resources
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.MyTab.resources
+E:\ZJZ\Github\TestForm\TestForm\obj\Debug\TestForm.EditButton.resources

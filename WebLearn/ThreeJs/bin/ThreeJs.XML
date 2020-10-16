@@ -414,6 +414,12 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="M:ThreeJs.Controllers.DiseaseController.GetId">
+            <summary>
+            测试id
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:ThreeJs.Controllers.ValuesController">
             <summary>
             值控制器
