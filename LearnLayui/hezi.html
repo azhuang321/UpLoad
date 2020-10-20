@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main {
+            background-color: red;
+            border: blue solid 10px;
+        }
+
+        .row {
+            background-color: blue;
+            float: left;
+            
+
+        }
+        .rowText{
+            margin-right:10px;
+            height: 20px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 20px;
+            background-color:white;
+            float: left;
+        }
+
+        .col {
+            clear: both;
+            background-color: slategray;
+           
+            display: block;
+            border: black solid 5px;
+            box-sizing: border-box;
+
+
+        }
+
+        .col>* {
+            padding: 5px;
+            
+            box-sizing:border-box;
+        }
+
+        .heightm {
+            height: 33.33333%;
+            width: 100%;
+        }
+
+        .heightl {
+            height: 50%;
+            width: 100%;
+        }
+
+        .widthm {
+            width: 33.333333%;
+            height: 100%;
+            border: white solid;
+            
+        }
+
+        .title {
+            width: 920px;
+            height: 80px;
+            background-color: green;
+        }
+
+        .maincontent {
+            width: 900px;
+            height: 500px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title">
+        <div class="rowText" style="text-align: center;">
+            环号
+        </div>
+        <div class="rowText" style="width: 200px;">
+
+        </div>
+        <div class="rowText">
+            时间范围
+        </div>
+    </div>
+    <div class="main maincontent">
+        <div class="col heightl">
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+<div>
+    监测断面分布
+</div>
+                </div>
+            </div>
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+
+                </div>
+            </div>
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+
+                </div>
+            </div>
+        </div>
+        <div class="col heightl">
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+
+                </div>
+            </div>
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+
+                </div>
+            </div>
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

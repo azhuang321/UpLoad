@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            cursor: default;
+        }
+
+        .main {
+            background-color: red;
+            border: blue solid 10px;
+            cursor: default;
+        }
+
+        .row {
+            background-color: blue;
+            float: left;
+
+
+        }
+
+        .smallTitle {
+
+            padding-top: 10px;
+            margin-bottom: 10px;
+            font: bold;
+            font-weight: 900;
+        }
+
+        .rowText {
+            margin-right: 10px;
+            height: 20px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 20px;
+            background-color: white;
+            float: left;
+        }
+
+        .col {
+            clear: both;
+            background-color: slategray;
+
+            display: block;
+            border: black solid 5px;
+            box-sizing: border-box;
+
+
+        }
+
+        .col>* {
+            padding: 5px;
+
+            box-sizing: border-box;
+        }
+
+        .heightm {
+            height: 33.33333%;
+            width: 100%;
+        }
+
+        .heightl {
+            height: 50%;
+            width: 100%;
+        }
+
+        .widthm {
+            width: 33.333333%;
+            height: 100%;
+            border: white solid;
+
+        }
+
+        .title {
+            width: 1020px;
+            height: 80px;
+            background-color: green;
+        }
+
+        .maincontent {
+            width: 1000px;
+            height: 600px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="menuBox" style="position: absolute; top: 100px;left: 100px;">
+        <iframe id="menu" src="menu.html" scrolling="no" frameborder="0" width="0px" height="0px">
+            <p>您的浏览器不支持 iframe 标签。</p>
+        </iframe>
+
+    </div>
+    <div class="title">
+        <div class="rowText" style="text-align: center;">
+            环号
+        </div>
+        <div class="rowText" style="width: 200px;">
+
+        </div>
+        <div class="rowText">
+            时间范围
+        </div>
+        <div class="rowText" style="width: 200px;">
+
+        </div>
+    </div>
+    <div class="main maincontent">
+        <div class="col heightl">
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+                    <div style="margin-left: 10px;">
+                        <div class="smallTitle">
+                            监测断面分布
+                        </div>
+                        <div style="height:120px">
+                            <div
+                                style="background: url(./picture/quxian/1.png) no-repeat;background-size:100% 100% ;height: 120px; width: 140px; float: left;">
+
+                            </div>
+                            <div style="float: left;margin-left: 10px;">
+                                <div style="padding-bottom: 5px;">
+                                    断面：ZK5+280
+                                </div>
+                                <div style="padding-bottom: 5px;">
+                                    类型：纵向裂缝
+                                </div>
+                                <div style="padding-bottom: 5px;">
+                                    位置：左拱腰
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear: both; margin-top: 10px;">
+                            <div style="float: left; width: 50px;">
+                                润水
+                            </div>
+                            <div style="float: left;width: 50px;">
+                                渗水
+                            </div>
+                            <div style="float: left;width: 50px;">
+                                滴水
+                            </div>
+                            <div style="float: left;width: 50px;">
+                                裂缝
+                            </div>
+                            <div style="float: left;width: 50px;">
+                                漏水
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+                    <div style="margin-left: 10px;">
+                        <div class="smallTitle">
+                            病害图片
+                        </div>
+                        <div style="height:120px">
+                            <div
+                                style="background: url(./picture/quxian/2.png) no-repeat;background-size:100% 100% ;height: 120px; width: 140px; float: left;">
+
+                            </div>
+
+                        </div>
+                        <div style="margin-top: 10px;">
+                            病害描述：
+                        </div>
+                        <div style="clear: both; margin-top: 5px;">
+                            <div style="float: left; margin-right: 5px;height: 21px;line-height: 21px;">
+                                长度
+                            </div>
+                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
+                                4.2m
+                            </div>
+                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
+                                宽度
+                            </div>
+                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
+                                0.3mm
+                            </div>
+                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
+                                深度
+                            </div>
+                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
+                                100mm
+                            </div>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            2020/3/20
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+                    <div style="margin-left: 10px;float: left;">
+                        <div class="smallTitle">
+                            补强效果分析
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            套拱加固
+                        </div>
+                        <div style="height:80px">
+                            <div
+                                style="background: url(./picture/quxian/3.png)  no-repeat ;background-size:100% 100% ;  height: 80px; width: 90px; float: left;">
+
+                            </div>
+
+                        </div>
+                        <div style="margin-top: 10px;">
+                            安全系数：4.5
+                        </div>
+
+
+                    </div>
+                    <div style="margin-left: 50px;float: left;">
+                        <div class="smallTitle">
+                            病害治理跟踪
+                        </div>
+                        <div style="margin-bottom: 10px;height: 21px;">
+
+                        </div>
+                        <div style="height:80px">
+                            <div
+                                style="background: url(./picture/quxian/4.png)  no-repeat;background-size:100% 100% ;  height: 80px; width: 120px; float: left;">
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col heightl">
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+                    <div style="margin-left: 10px;">
+                        <div class="smallTitle">
+                            地质剖面图
+                        </div>
+                        <div style="margin-bottom: 10px;height: 21px;">
+
+                        </div>
+                        <div style="height:120px">
+                            <div
+                                style="background: url(./picture/quxian/5.png)  no-repeat;background-size:100% 100% ;  height: 120px; width: 150px; float: left;">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+                    <div style="margin-left: 10px;float: left;">
+                        <div class="smallTitle">
+                            病害结构分析
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            初始状态
+                        </div>
+                        <div style="height:80px">
+                            <div
+                                style="background: url(./picture/quxian/6.png)  no-repeat ;background-size:100% 100% ;  height: 80px; width: 90px; float: left;">
+
+                            </div>
+
+                        </div>
+                        <div style="margin-top: 10px;">
+                            安全系数：3.6
+                        </div>
+                        <div style="margin-top: 5px;">
+                            裂缝宽度0.0mm
+                        </div>
+
+
+                    </div>
+                    <div style="margin-left: 10px;float: left;">
+                        <div class="smallTitle " style="height:21px;">
+
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            衬砌裂缝
+                        </div>
+                        <div style="height:80px">
+                            <div
+                                style="background: url(./picture/quxian/7.png)  no-repeat ;background-size:100% 100% ;  height: 80px; width: 90px; float: left;">
+
+                            </div>
+
+                        </div>
+                        <div style="margin-top: 10px;">
+                            安全系数：3.1
+                        </div>
+                        <div style="margin-top: 5px;">
+                            裂缝宽度0.3mm
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row widthm">
+                <div style="width: 100%;height: 100%;background-color:white;">
+                    <div style="width: 100%;height: 100%;background-color:white;">
+                        <div style="margin-left: 10px;">
+                            <div class="smallTitle">
+                                养护历史
+                            </div>
+                            <div style="margin-bottom: 10px;height: 21px;">
+
+                            </div>
+                            <div style="height:120px">
+                                <div
+                                    style="background: url(./picture/quxian/8.png)  no-repeat;background-size:100% 100% ;  height: 120px; width: 300px; float: left;">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="jquery.min.js"> </script>
+    <script>
+        /*$("body").click(function (e) {
+            bodyClick(e)
+        });
+
+        function bodyClick(e) {
+            $("#menu").width(document.getElementById("menu").contentDocument.body.scrollWidth);
+            $("#menu").height(document.getElementById("menu").contentDocument.body.scrollHeight);
+            $("#menuBox").css("left", e.clientX + "px");
+            $("#menuBox").css("top", e.clientY + "px");
+            console.log(e);
+        }
+        $("body").mousedown(function (e) {
+            console.log(e);
+        });
+        $("body").contextmenu()*/
+    </script>
+</body>
+
+</html>
