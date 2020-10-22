@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+
+
+    <link rel="stylesheet" type="text/css" href="./easyui/themes/default/easyui.css">
+
+    <style>
+        .parentdiv {
+            margin-bottom: 1px;
+            background-color: blue;
+            clear: both;
+        }
+
+        .childdiv {
+            text-align: center;
+            float: left;
+            margin-right: 0px;
+            border-color: gray;
+            border-width: 0.5px;
+            border-style: solid;
+        }
+
+        .cell {
+            border-color: gray;
+            border-width: 0.5px;
+            border-style: solid;
+        }
+
+
+        .buttonAction {
+            text-align: center;
+            margin-top: 10px;
+            background-color: #619FEA;
+            color: #FFFFFF;
+            width: 120px;
+            height: 36px;
+            float: left;
+            margin-right: 20px;
+            line-height: 36px;
+            border-color: gray;
+            border-width: 0.5px;
+            border-style: solid;
+            margin-left: 1px;
+            border-radius: 5%;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 10px;
+            color: #619FEA;
+            background-color: #FFFFFF;
+            width: 120px;
+            height: 36px;
+            float: left;
+            margin-right: 20px;
+            line-height: 36px;
+            border-color: gray;
+            border-width: 0.5px;
+            border-style: solid;
+            margin-left: 1px;
+            border-radius: 5%;
+        }
+    </style>
+    <title>夹江隧道全寿命期数字化管理系统</title>
+</head>
+
+<body>
+    
+    
+    <div id="main2" style="margin-top:5px;background-color:white;width: 850px;height: 400px;cursor: default; border:1px solid;">
+
+        <div id="buttons" style="margin-top:5px;background-color:white;width: 840px;height: 60px;">
+            <div id="button1" class="buttonAction">
+                基本信息
+            </div>
+            <div id="button2" class="button">
+                检查信息
+            </div>
+            <div id="button3" class="button">
+               维修记录
+            </div>
+        </div>
+        <div id="base">
+
+
+            <div id="table" style="margin-top:5px;background-color:black;width: 650px;height: 246px;float: left;">
+
+            </div>
+            <div id="picture" class="cell" style="margin-top:5px;width: 190px;height: 246px;float: left;background-size: 100%">
+                <img src="tablepic.png"  style="width: 190px;height: 246px;"">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./easyui/jquery.min.js"></script>
+
+    <script>
+        var Li1 = []
+        var li2 = []
+        var li3 = []
+        var numX = 4;
+        var numY = 6;
+        $("#main").width($(window).width())
+        $("#main").height($(window).height())
+        console.log($("#table").width());
+        var dxmin = $("#table").width() / numX ;
+        var dymin = $("#table").height() / numY-1 ;
+        //$("#picture").css("background", "url('tablepic.jpg')")
+        var backcolor;
+        var data = [
+            ["设备类型","风机","设备名称","隧道鼓风机"],
+            ["型号","UniGear550","厂家","厦门AABBCCDD有限责任公司"],
+            ["所属隧道","左线","安装位置","顶部1212环"],
+            ["编号","AC7865#4425AG","编号","AC7865#4425AG"],
+            ["养护级别","2级","养护单位","ABCD公司"],
+            ["责任人","王明12345678","责任单位","CCC公司"]
+        ];
+        for (var i = 0; i < numY; i++) {
+            if (i % 2 == 0) {
+                backcolor = "#dddddd";
+            } else {
+                backcolor = "#ffffff";
+            }
+            var parentdiv = $('<div></div>'); //创建一个父div
+            parentdiv.attr('id', 'data' + i); //给父div设置id
+            parentdiv.addClass('parentdiv'); //添加css样式
+            parentdiv.width($("#table").width());
+            parentdiv.height(dymin);
+            parentdiv.appendTo($("#table")); //将父div添加到body中
+
+
+            for (var j = 0; j < numX; j++) {
+                var childdiv = $('<div></div>'); //创建一个父div
+                childdiv.attr('id', 'data' + i + "," + j); //给父div设置id
+                childdiv.addClass('childdiv'); //添加css样式
+                childdiv.width(dxmin);
+                childdiv.height(dymin);
+                childdiv.text(data[i][j]);
+                childdiv.css("line-height", dymin + "px");
+                childdiv.css("background-color", backcolor);
+                childdiv.appendTo(parentdiv); //将父div添加到body中
+
+            }
+        }
+        $("#button1").click(function () {
+            $("#button1").attr("class", "buttonAction");
+            $("#button2").attr("class", "button");
+            $("#button3").attr("class", "button");
+        })
+        $("#button2").click(function () {
+            $("#button1").attr("class", "button");
+            $("#button2").attr("class", "buttonAction");
+            $("#button3").attr("class", "button");
+        })
+        $("#button3").click(function () {
+            $("#button1").attr("class", "button");
+            $("#button2").attr("class", "button");
+            $("#button3").attr("class", "buttonAction");
+        })
+    </script>
+</body>
+
+</html>

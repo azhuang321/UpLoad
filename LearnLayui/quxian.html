@@ -1,360 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./easyui/themes/icon.css">
+    <script type="text/javascript" src="./easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="./easyui/jquery.easyui.min.js"></script>
     <style>
-        body {
-            cursor: default;
-        }
-
-        .main {
-            background-color: red;
-            border: blue solid 10px;
-            cursor: default;
-        }
-
-        .row {
-            background-color: blue;
-            float: left;
-
-
-        }
-
-        .smallTitle {
-
-            padding-top: 10px;
-            margin-bottom: 10px;
-            font: bold;
-            font-weight: 900;
+        .icon-no {
+            background-image: none;
+            width: 0px;
         }
 
         .rowText {
-            margin-right: 10px;
+            margin-right: 15px;
             height: 20px;
-            margin-top: 10px;
+            margin-top: 15px;
             text-align: center;
             line-height: 20px;
             background-color: white;
             float: left;
         }
 
-        .col {
+        .parentdiv {
+            margin-bottom: 1px;
+            background-color: blue;
             clear: both;
-            background-color: slategray;
+        }
 
-            display: block;
-            border: black solid 5px;
-            box-sizing: border-box;
+        .childdiv {
 
+            text-align: center;
+
+            float: left;
+            margin-right: 0px;
+            border-color: #dddddd;
+            border-width: 0.5px;
+            border-style: solid;
 
         }
 
-        .col>* {
-            padding: 5px;
-
-            box-sizing: border-box;
+        .cell {
+            border-color: #dddddd;
+            border-width: 0.5px;
+            border-style: solid;
         }
 
-        .heightm {
-            height: 33.33333%;
-            width: 100%;
+
+        .buttonAction {
+            text-align: center;
+            margin-top: 10px;
+            background-color: #619FEA;
+            color: #FFFFFF;
+            width: 120px;
+            height: 36px;
+            float: left;
+            margin-right: 20px;
+            line-height: 36px;
+            border-color: gray;
+            border-width: 0.5px;
+            border-style: solid;
+            margin-left: 1px;
+            border-radius: 5%;
         }
 
-        .heightl {
-            height: 50%;
-            width: 100%;
-        }
-
-        .widthm {
-            width: 33.333333%;
-            height: 100%;
-            border: white solid;
-
-        }
-
-        .title {
-            width: 1020px;
-            height: 80px;
-            background-color: green;
-        }
-
-        .maincontent {
-            width: 1000px;
-            height: 600px;
+        .button {
+            text-align: center;
+            margin-top: 10px;
+            color: #619FEA;
+            background-color: #FFFFFF;
+            width: 120px;
+            height: 36px;
+            float: left;
+            margin-right: 20px;
+            line-height: 36px;
+            border-color: gray;
+            border-width: 0.5px;
+            border-style: solid;
+            margin-left: 1px;
+            border-radius: 5%;
         }
     </style>
-    <title>Document</title>
+    <title>夹江隧道全寿命期数字化管理系统</title>
 </head>
 
 <body>
-    <div id="menuBox" style="position: absolute; top: 100px;left: 100px;">
-        <iframe id="menu" src="menu.html" scrolling="no" frameborder="0" width="0px" height="0px">
-            <p>您的浏览器不支持 iframe 标签。</p>
-        </iframe>
-
-    </div>
-    <div class="title">
-        <div class="rowText" style="text-align: center;">
-            环号
-        </div>
-        <div class="rowText" style="width: 200px;">
-
-        </div>
-        <div class="rowText">
-            时间范围
-        </div>
-        <div class="rowText" style="width: 200px;">
-
-        </div>
-    </div>
-    <div class="main maincontent">
-        <div class="col heightl">
-            <div class="row widthm">
-                <div style="width: 100%;height: 100%;background-color:white;">
-                    <div style="margin-left: 10px;">
-                        <div class="smallTitle">
-                            监测断面分布
-                        </div>
-                        <div style="height:120px">
-                            <div
-                                style="background: url(./picture/quxian/1.png) no-repeat;background-size:100% 100% ;height: 120px; width: 140px; float: left;">
-
-                            </div>
-                            <div style="float: left;margin-left: 10px;">
-                                <div style="padding-bottom: 5px;">
-                                    断面：ZK5+280
-                                </div>
-                                <div style="padding-bottom: 5px;">
-                                    类型：纵向裂缝
-                                </div>
-                                <div style="padding-bottom: 5px;">
-                                    位置：左拱腰
-                                </div>
-                            </div>
-                        </div>
-                        <div style="clear: both; margin-top: 10px;">
-                            <div style="float: left; width: 50px;">
-                                润水
-                            </div>
-                            <div style="float: left;width: 50px;">
-                                渗水
-                            </div>
-                            <div style="float: left;width: 50px;">
-                                滴水
-                            </div>
-                            <div style="float: left;width: 50px;">
-                                裂缝
-                            </div>
-                            <div style="float: left;width: 50px;">
-                                漏水
-                            </div>
-                        </div>
-
-                    </div>
-
+    <div style="border: 1px solid; width: 1202px;height: 602px;">
+        <div id="side-left" style="float:left;margin-top:0px;background-color:white;height: 300px;cursor: default; ">
+            <div id="tree" style="float: left;;width: 150px;height: 600px;">
+                <div class="easyui-panel" style="height: 600px;border-top: 0px solid;border-bottom: 0px solid;">
+                    <ul class="easyui-tree" data-options="url:'treedata.json',method:'get',animate:true,lines:true">
+                    </ul>
                 </div>
             </div>
-            <div class="row widthm">
-                <div style="width: 100%;height: 100%;background-color:white;">
-                    <div style="margin-left: 10px;">
-                        <div class="smallTitle">
-                            病害图片
-                        </div>
-                        <div style="height:120px">
-                            <div
-                                style="background: url(./picture/quxian/2.png) no-repeat;background-size:100% 100% ;height: 120px; width: 140px; float: left;">
-
-                            </div>
-
-                        </div>
-                        <div style="margin-top: 10px;">
-                            病害描述：
-                        </div>
-                        <div style="clear: both; margin-top: 5px;">
-                            <div style="float: left; margin-right: 5px;height: 21px;line-height: 21px;">
-                                长度
-                            </div>
-                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
-                                4.2m
-                            </div>
-                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
-                                宽度
-                            </div>
-                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
-                                0.3mm
-                            </div>
-                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
-                                深度
-                            </div>
-                            <div style="float: left;margin-right: 5px;height: 21px;line-height: 21px;">
-                                100mm
-                            </div>
-                        </div>
-                        <div style="margin-top: 5px;">
-                            2020/3/20
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row widthm">
-                <div style="width: 100%;height: 100%;background-color:white;">
-                    <div style="margin-left: 10px;float: left;">
-                        <div class="smallTitle">
-                            补强效果分析
-                        </div>
-                        <div style="margin-bottom: 10px;">
-                            套拱加固
-                        </div>
-                        <div style="height:80px">
-                            <div
-                                style="background: url(./picture/quxian/3.png)  no-repeat ;background-size:100% 100% ;  height: 80px; width: 90px; float: left;">
-
-                            </div>
-
-                        </div>
-                        <div style="margin-top: 10px;">
-                            安全系数：4.5
-                        </div>
-
-
-                    </div>
-                    <div style="margin-left: 50px;float: left;">
-                        <div class="smallTitle">
-                            病害治理跟踪
-                        </div>
-                        <div style="margin-bottom: 10px;height: 21px;">
-
-                        </div>
-                        <div style="height:80px">
-                            <div
-                                style="background: url(./picture/quxian/4.png)  no-repeat;background-size:100% 100% ;  height: 80px; width: 120px; float: left;">
-
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-                </div>
+            <div style="background-color: white;width: 20px;height: 600px;float: left;margin-right: 2px;">
+                <div id="side-button" style="margin-top: 290px;">
+                    <img id="pic-image" src="arrow-left-bold.png"
+                        style="background-color: #619fea;width: 15px;height:30px;"></div>
             </div>
         </div>
-        <div class="col heightl">
-            <div class="row widthm">
-                <div style="width: 100%;height: 100%;background-color:white;">
-                    <div style="margin-left: 10px;">
-                        <div class="smallTitle">
-                            地质剖面图
-                        </div>
-                        <div style="margin-bottom: 10px;height: 21px;">
+        <div id="main2" style="margin-top:5px;width: 1000px;height: 580px;cursor: default;float: left;">
 
-                        </div>
-                        <div style="height:120px">
-                            <div
-                                style="background: url(./picture/quxian/5.png)  no-repeat;background-size:100% 100% ;  height: 120px; width: 150px; float: left;">
+            <div style="height: 280px; clear: both;font-size: small;">
 
+                <div style="height: 280px;width: 600px;float: left;margin-left: 50px;">
+                    <div style="clear: both;">
+
+                        <div class="rowText">
+                            时间范围
+                        </div>
+                        <div class="rowText" style="margin-right: 5px;">
+                            <div class="layui-inline">
+                                <input type="text" class="layui-input" id="test6-1" style="border: 1px solid; ">
                             </div>
+                        </div>
+                        <div style="float: left;margin-top: 15px;margin-right: 5px;height: 20px;line-height: 20px;">
+                            -
+                        </div>
 
+                        <div style="float: left;margin-top: 15px;height: 20px;line-height: 20px;">
+                            <div class="layui-inline">
+                                <input type="text" class="layui-input" id="test6-2" style="border: 1px solid; ">
+                            </div>
+                        </div>
+                        <div class="rowText" style="margin-left:15px;color: blue;">
+                            健康等级
+                        </div>
+                        <div class="rowText" style="font-size: x-large;color: blue;">
+                            2
+                        </div>
+                    </div>
+                    <div style="clear: both;">
+
+                        <div class="rowText">
+                            时间选项：
+                        </div>
+                    
+                        <div class="rowText" style="color: blue;">
+                            7天
+                        </div>
+                        <div class="rowText" >
+                            30天
+                        </div>
+                    </div>
+                    <div style="clear: both;">
+
+                        <div class="rowText">
+                            监测断面：
+                        </div>
+                    <div style="float:left;width: 400px;">
+                        <div class="rowText" >
+                            ZK9+360
+                        </div>
+                        <div class="rowText" >
+                            ZK9+750
+                        </div>
+                        <div class="rowText" >
+                            ZK10+060
+                        </div>
+                        <div class="rowText" >
+                            K9+615
+                        </div>
+                        <div class="rowText" >
+                            K9+915
+                        </div>
+                        <div class="rowText" >
+                            K10+200
+                        </div>
+                       
+                    </div>
+                    </div>
+                    <div style="clear: both;">
+
+                        <div class="rowText">
+                            测点布置：
+                        </div>
+                    
+                        <div class="rowText" style="color: blue;">
+                            A1
+                        </div>
+                        <div class="rowText" style="color: blue;">
+                            B1
+                        </div>
+                        <div class="rowText" style="color: blue;">
+                            C1
+                        </div>
+                        <div class="rowText" style="color: blue;">
+                            D1
+                        </div>
+                        <div class="rowText" style="color: blue;">
+                            E1
+                        </div>
+                        <div class="rowText" style="color: blue;">
+                            F1
+                        </div>
+                        <div class="rowText" style="color: blue;">
+                            G1
+                        </div>
+                        <div class="rowText" style="color: blue;">
+                            H1
+                        </div>
+                    </div>
+                    <div style="clear: both;">
+
+                        <div class="rowText">
+                            监测项目：
+                        </div>
+                    
+                        <div style="float:left;width: 400px;">
+                            <div class="rowText" style="color: blue;" >
+                                土压力
+                            </div>
+                            <div class="rowText" >
+                                钢筋应力
+                            </div>
+                            <div class="rowText" >
+                                混凝土应力
+                            </div>
+                            <div class="rowText" >
+                                混凝土温度
+                            </div>
+                            <div class="rowText" >
+                                水压力
+                            </div>
+                            <div class="rowText" >
+                                螺栓受力
+                            </div>
+                            <div class="rowText" >
+                                内埋位移
+                            </div>
+                            <div class="rowText" >
+                                表面位移
+                            </div>
+                            <div class="rowText" >
+                                接触应力
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
+
+
+                <div
+                    style="height: 280px;background: url(./picture/quxian/0.png) no-repeat ;background-size: 100% 100%; width: 280px;float: right;">
+
+                </div>
+                <div style="height: 180px;background-color:#aaaaaa;width: 2px;float: right;margin-right: 50px;margin-top: 30px;">
+
+                </div>
+
+
             </div>
-            <div class="row widthm">
-                <div style="width: 100%;height: 100%;background-color:white;">
-                    <div style="margin-left: 10px;float: left;">
-                        <div class="smallTitle">
-                            病害结构分析
-                        </div>
-                        <div style="margin-bottom: 10px;">
-                            初始状态
-                        </div>
-                        <div style="height:80px">
-                            <div
-                                style="background: url(./picture/quxian/6.png)  no-repeat ;background-size:100% 100% ;  height: 80px; width: 90px; float: left;">
-
-                            </div>
-
-                        </div>
-                        <div style="margin-top: 10px;">
-                            安全系数：3.6
-                        </div>
-                        <div style="margin-top: 5px;">
-                            裂缝宽度0.0mm
-                        </div>
-
-
-                    </div>
-                    <div style="margin-left: 10px;float: left;">
-                        <div class="smallTitle " style="height:21px;">
-
-                        </div>
-                        <div style="margin-bottom: 10px;">
-                            衬砌裂缝
-                        </div>
-                        <div style="height:80px">
-                            <div
-                                style="background: url(./picture/quxian/7.png)  no-repeat ;background-size:100% 100% ;  height: 80px; width: 90px; float: left;">
-
-                            </div>
-
-                        </div>
-                        <div style="margin-top: 10px;">
-                            安全系数：3.1
-                        </div>
-                        <div style="margin-top: 5px;">
-                            裂缝宽度0.3mm
-                        </div>
-
-
-
-                    </div>
+            <div style="clear:both;height: 40px;">
+                <div style="height: 40px; line-height: 40px; font-weight: 900; float: left;margin-right: 10px;">
+                    监测曲线图
+                </div>
+                <div
+                    style="height: 40px; line-height: 40px; font-size: small; float: left;margin-right: 10px;color: blue;">
+                    累计变化量
+                </div>
+                <div style="height: 40px; line-height: 40px; font-size: small; float: left;margin-right: 10px;">
+                    变化速率
+                </div>
+                <div style="height: 40px; line-height: 40px; font-size: small;  float: left;margin-right: 10px;">
+                    测量值
+                </div>
+                <div
+                    style=" border-radius:10% 10%;text-align: center; width:90px;margin-top:5px;height: 30px; line-height: 30px; font-size: small;  float: right;margin-right: 10px;background-color: blue;color: white;">
+                    测点数据
                 </div>
             </div>
-            <div class="row widthm">
-                <div style="width: 100%;height: 100%;background-color:white;">
-                    <div style="width: 100%;height: 100%;background-color:white;">
-                        <div style="margin-left: 10px;">
-                            <div class="smallTitle">
-                                养护历史
-                            </div>
-                            <div style="margin-bottom: 10px;height: 21px;">
+            <div style="height: 110px; background: url(./picture/quxian/1.png) no-repeat ;background-size: 100% 100%;">
 
-                            </div>
-                            <div style="height:120px">
-                                <div
-                                    style="background: url(./picture/quxian/8.png)  no-repeat;background-size:100% 100% ;  height: 120px; width: 300px; float: left;">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div style="clear:both;height: 40px;">
+                <div style="height: 40px; line-height: 40px; font-weight: 900; float: left;margin-right: 10px;">
+                    监测断面分布
                 </div>
+                <div style="height: 40px; line-height: 40px; font-size: small; float: left;margin-right: 10px;">
+                    断面位置 ZK5+280
+                </div>
+            </div>
+            <div
+                style="height: 110px; background: url(./picture/quxian/2.png) no-repeat ;margin-bottom: 40px;background-size: 100% 100%;">
+
             </div>
         </div>
-
-    </div>
-    <script src="jquery.min.js"> </script>
-    <script>
-        /*$("body").click(function (e) {
-            bodyClick(e)
-        });
-
-        function bodyClick(e) {
-            $("#menu").width(document.getElementById("menu").contentDocument.body.scrollWidth);
-            $("#menu").height(document.getElementById("menu").contentDocument.body.scrollHeight);
-            $("#menuBox").css("left", e.clientX + "px");
-            $("#menuBox").css("top", e.clientY + "px");
-            console.log(e);
-        }
-        $("body").mousedown(function (e) {
-            console.log(e);
-        });
-        $("body").contextmenu()*/
-    </script>
+        <script src="layui/layui.js" charset="utf-8"></script>
+        <script>
+            $("#side-button").click(function () {
+                if ($("#tree").width() == 0) {
+                    $("#tree").width(150);
+                    $("#pic-image").attr("src", "arrow-left-bold.png");
+                } else {
+                    $("#tree").width(0);
+                    $("#pic-image").attr("src", "arrow-right-bold.png")
+                }
+            });
+            layui.use('laydate', function () {
+                var laydate = layui.laydate;
+                laydate.render({
+                    elem: '#test6-1' //指定元素
+                        ,
+                    type: 'datetime',
+                    theme: 'molv',
+                    value: '2020-10-20 00:00:00',
+                    isInitValue: true
+                        //,range: true
+                        ,
+                    trigger: 'click'
+                });
+                laydate.render({
+                    elem: '#test6-2' //指定元素
+                        ,
+                    type: 'datetime',
+                    theme: 'molv',
+                    value: '2020-10-20 00:00:00',
+                    isInitValue: true
+                        //,range: true
+                        ,
+                    trigger: 'click'
+                });
+            });
+        </script>
 </body>
 
 </html>

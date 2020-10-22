@@ -1,0 +1,115 @@
+[{
+	"id":1,
+    "text":"施工期",
+    "iconCls":"icon-no",
+    "state":"closed",
+	"children":[{
+		"id":11,
+        "text":"检测项目",
+        "iconCls":"icon-no",
+		"state":"closed",
+		"children":[{
+			"id":111,
+			"text":"地表沉降",
+            "iconCls":"icon-no",
+            "state":"closed",
+            "children":[{
+                "id":211,
+                "text":"混凝土腐蚀",
+
+                "iconCls":"icon-no"}]
+		},{
+			"id":112,
+			"text":"收敛",
+            "iconCls":"icon-no",
+            "state":"closed",
+            "children":[{
+                "id":211,
+                "text":"混凝土腐蚀",
+
+                "iconCls":"icon-no"}]
+		}]
+	}]
+},
+{
+	"id":2,
+	"text":"运营期",
+    "iconCls":"icon-no",
+    "state":"closed",
+	"children":[{
+		"id":21,
+		"text":"监测项目",
+        "iconCls":"icon-no",
+		"state":"closed",
+		"children":[{
+			"id":211,
+			"text":"混凝土腐蚀",
+            "iconCls":"icon-no",
+            "state":"closed",
+            "children":[{
+                "id":211,
+                "text":"混凝土腐蚀",
+
+                "iconCls":"icon-no"}]
+		},{
+			"id":212,
+			"text":"混螺栓受力",
+            "iconCls":"icon-no",
+            "state":"closed",
+            "children":[{
+                "id":211,
+                "text":"混凝土腐蚀",
+
+                "iconCls":"icon-no"}]
+        }
+        ,{
+			"id":213,
+			"text":"接缝位移",
+            "iconCls":"icon-no",
+            "state":"closed",
+            "children":[{
+                "id":211,
+                "text":"混凝土腐蚀",
+
+                "iconCls":"icon-no"}]
+		},{
+			"id":214,
+			"text":"管片结构内力",
+            "iconCls":"icon-no",
+            "state":"closed",
+            "children":[{
+                "id":211,
+                "text":"混凝土腐蚀",
+    
+                "iconCls":"icon-no"}]
+		},{
+			"id":215,
+			"text":"土压力",
+            "iconCls":"icon-no",
+            "state":"closed",
+            "children":[{
+                "id":211,
+                "text":"混凝土腐蚀",
+
+                "iconCls":"icon-no"}]
+        }
+        ,{
+			"id":216,
+            "text":"水压力",
+   
+            "iconCls":"icon-no"
+		},{
+			"id":217,
+            "text":"钢筋应力",
+  
+            "iconCls":"icon-no"
+        }
+        ,{
+			"id":218,
+            "text":"混凝土温度",
+
+            "iconCls":"icon-no"
+		}]
+	}]
+}
+]
